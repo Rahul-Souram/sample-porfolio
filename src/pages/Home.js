@@ -26,9 +26,15 @@ const Home = () => {
               <li>2.5 Experience in React JS Developer role</li>
               <li>Hyderabad</li>
             </ul>
-            <Link className="site-btn" to="/about" onClick={() => scrollTop()}>
-              About me
-            </Link>
+            <div className="text-center">
+              <Link
+                className="site-btn"
+                to="/about"
+                onClick={() => scrollTop()}
+              >
+                About me
+              </Link>
+            </div>
           </div>
         </SlideSide>
         <SlideSide durationTime={0.8} delaySec={0.5} side="right">
@@ -43,13 +49,15 @@ const Home = () => {
                 skills: React js, Redux, Gatsby, Scss, Javascript
               </p>
             </div>
-            <Link
-              className="site-btn"
-              to="/my-work"
-              onClick={() => scrollTop()}
-            >
-              my work
-            </Link>
+            <div className="text-center">
+              <Link
+                className="site-btn"
+                to="/my-work"
+                onClick={() => scrollTop()}
+              >
+                my work
+              </Link>
+            </div>
           </div>
         </SlideSide>
         <SlideSide durationTime={0.8} delaySec={0.5} side="left">
