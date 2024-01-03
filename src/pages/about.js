@@ -21,21 +21,27 @@ const About = () => {
           </SlideVertical>
         </ul>
         <ChartComponent />
-        <div className=" intro-card">
-          <h2>My Works</h2>
-          <div>
+        <SlideVertical delaySec={0.3} durationTime={0.8}>
+          <div className=" intro-card">
+            <h2>My Works</h2>
             <div>
-              I have built multiple projects based on static, dynamic,
-              e-commerce websites and commercial websites.
+              <div>
+                I have built multiple projects based on static, dynamic,
+                e-commerce websites and commercial websites.
+              </div>
+              <p className="fw-bold">
+                skills: React js, Redux, Gatsby, Scss, Javascript
+              </p>
             </div>
-            <p className="fw-bold">
-              skills: React js, Redux, Gatsby, Scss, Javascript
-            </p>
+            <Link
+              className="site-btn"
+              to="/my-work"
+              onClick={() => scrollTop()}
+            >
+              my work
+            </Link>
           </div>
-          <Link className="site-btn" to="/my-work" onClick={() => scrollTop()}>
-            my work
-          </Link>
-        </div>
+        </SlideVertical>
       </div>
     </div>
   );

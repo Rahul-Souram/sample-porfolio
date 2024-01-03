@@ -2,6 +2,8 @@ import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { SlideUpTitle } from "../animations/SlideUpTitle";
 import { CardAnimation } from "../animations/CardAnimation";
+import { footerLinks } from "../static/data";
+import Icons from "../assets/icons/icons.svg";
 
 const Contact = ({ data }) => {
   const form = useRef();
@@ -120,6 +122,21 @@ const Contact = ({ data }) => {
           </h5>
         </div>
       </SlideUpTitle>
+      <div className="footer-links-container social-media">
+        <SlideUpTitle delaySec={0.3} durationTime={0.5}>
+          {footerLinks.map((item) => {
+            const { icon, link } = item;
+            return (
+              <a href={link} target="_blank" rel="noreferrer" key={icon}>
+                {" "}
+                <svg className="icon-logo">
+                  <use xlinkHref={`${Icons}#icon-${icon}`} />
+                </svg>
+              </a>
+            );
+          })}
+        </SlideUpTitle>
+      </div>
     </div>
   );
 };

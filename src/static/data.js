@@ -56,3 +56,12 @@ export const workData = [
     img: "https://news.blr.com/app/uploads/sites/3/2019/10/Team-project.jpg",
   },
 ];
+
+export const footerLinks = [
+  { icon: "mail", link: "mailto:souramrahul@gmail.com.com" },
+  {
+    icon: "linkedin",
+    link: "https://www.linkedin.com/in/rahul-souram-511719156/",
+  },
+  { icon: "githubf", link: "https://github.com/rahul-souram" },
+];

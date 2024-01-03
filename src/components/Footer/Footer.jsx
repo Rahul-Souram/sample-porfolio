@@ -1,17 +1,9 @@
 import React from "react";
 import Icons from "../../assets/icons/icons.svg";
 import { Link } from "react-router-dom";
+import { footerLinks } from "../../static/data";
 
 const Footer = () => {
-  const footerLinks = [
-    { icon: "mail", link: "mailto:souramrahul@gmail.com.com" },
-    {
-      icon: "linkedin",
-      link: "https://www.linkedin.com/in/rahul-souram-511719156/",
-    },
-    { icon: "githubf", link: "https://github.com/rahul-souram" },
-  ];
-
   return (
     <div className="footer-container">
       <div className="footer-logo-container">
