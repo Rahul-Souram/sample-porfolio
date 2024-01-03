@@ -4,13 +4,12 @@
     justify-content: space-between;
     align-items: center;
     padding: 1.5rem;
-    border-bottom: 1px solid gray;
+    border-bottom: 2px solid $white;
   }
   &-logo {
-    img {
-      width: 4rem;
-      height: 4rem;
-    }
+    color: $white;
+    text-decoration: none;
+    font-size: 1.5rem;
   }
   &-contact-container {
     display: none;
@@ -27,10 +26,11 @@
     }
     a {
       margin: 0 2rem;
-      color: $black;
+      color: $white;
       font-weight: 500;
       position: relative;
       font-size: 1rem;
+      text-decoration: none;
       &::after {
         content: "";
         position: absolute;
@@ -39,7 +39,7 @@
         height: 2px;
         bottom: 0;
         left: 0;
-        background-color: $theme-blue;
+        background-color: $white;
         transform-origin: bottom right;
         transition: transform 0.25s ease-out;
       }
@@ -48,7 +48,7 @@
         transform-origin: bottom left;
       }
       &:hover {
-        color: $theme-blue;
+        color: $white;
       }
     }
     @media (min-width: 992px) {
@@ -62,6 +62,6 @@ header {
   position: sticky;
   top: 0;
   width: 100%;
-  background: $white;
+  background: $theme-blue;
   z-index: 10;
 }

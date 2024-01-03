@@ -18,15 +18,6 @@ const Menu = ({ setIsMenuOpen, mainNav }) => {
             </Link>
           </li>
         ))}
-        <div className="menu-list-donate">
-          <Link
-            to="/contact-us"
-            className="contact-btn"
-            onClick={() => handleOpen()}
-          >
-            Contact Us
-          </Link>
-        </div>
       </ul>
     </div>
   );

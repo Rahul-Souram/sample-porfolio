@@ -11,17 +11,41 @@ const Home = () => {
   return (
     <div className="container my-4">
       <Banner title={title} description={description} img={img} />
-      <div className="text-center my-3">
-        <h2>About Me</h2>
-        <Link className="site-btn" to="/about">
-          About me
-        </Link>
-      </div>
-      <div className="text-center my-3">
-        <h2>My Works</h2>
-        <Link className="site-btn" to="/work">
-          my work
-        </Link>
+      <div className="d-flex justify-center flex-column">
+        <div className=" intro-card">
+          <h2>About Me</h2>
+          <ul className="text-start">
+            <li>Rahul Souram</li>
+            <li>Self Taught Developer</li>
+            <li>2.5 Experience in React JS Developer role</li>
+            <li>Hyderabad</li>
+          </ul>
+          <Link className="site-btn" to="/about">
+            About me
+          </Link>
+        </div>
+        <div className=" intro-card">
+          <h2>My Works</h2>
+          <div>
+            <div>
+              I have built multiple projects based on static, dynamic,
+              e-commerce websites and commercial websites.
+            </div>
+            <p className="fw-bold">
+              skills: React js, Redux, Gatsby, Scss, Javascript
+            </p>
+          </div>
+          <Link className="site-btn" to="/my-work">
+            my work
+          </Link>
+        </div>
+        <div className="intro-card text-center">
+          <h3 className="text-center">Get In Touch</h3>
+          <p>you can reach me out by clicking below</p>
+          <Link to="/contact" className="site-btn">
+            Contact
+          </Link>
+        </div>
       </div>
     </div>
   );

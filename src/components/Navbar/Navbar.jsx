@@ -25,8 +25,7 @@ const Navbar = () => {
     <header>
       <div className="header-container">
         <Link to="/" className="header-logo">
-          {/* <img src={Logo} alt="logo" /> */}
-          Logo
+          My Portfolio
         </Link>
         <div className="header-menu-container">
           {menuItems.map((item) => {

@@ -10,7 +10,9 @@ const Banner = ({ title, description, img }) => {
       <div className="banner-container-details">
         <h2>{title}</h2>
         <h4>{description}</h4>
-        <Link to="/about">Know More</Link>
+        <Link to="/about" className="site-btn">
+          Know More
+        </Link>
       </div>
     </div>
   );
