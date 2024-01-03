@@ -29,3 +29,30 @@ export const bio = [
   `As a self-taught developer, this person has likely had to think creatively to solve difficult technical problems, which is a valuable skill in any job.`,
   `By securing their first job as a frontend developer, this person has shown that they have long-term career goals and are committed to building a successful career in web development.`,
 ];
+
+export const workData = [
+  {
+    title: "Project 1",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    img: "https://news.blr.com/app/uploads/sites/3/2019/10/Team-project.jpg",
+  },
+  {
+    title: "Project 2",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    img: "https://builtin.com/cdn-cgi/image/f=auto,quality=80,width=752,height=435/https://builtin.com/sites/www.builtin.com/files/styles/byline_image/public/2022-11/data-science-projects.jpg",
+  },
+  {
+    title: "Project 3",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    img: "https://builtin.com/cdn-cgi/image/f=auto,quality=80,width=752,height=435/https://builtin.com/sites/www.builtin.com/files/styles/byline_image/public/2022-11/data-science-projects.jpg",
+  },
+  {
+    title: "Project 4",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    img: "https://news.blr.com/app/uploads/sites/3/2019/10/Team-project.jpg",
+  },
+];
