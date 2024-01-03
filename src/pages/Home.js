@@ -15,7 +15,7 @@ const Home = () => {
         <div className=" intro-card">
           <h2>About Me</h2>
           <ul className="text-start">
-            <li>Rahul Souram</li>
+            <li>John Doe</li>
             <li>Self Taught Developer</li>
             <li>2.5 Experience in React JS Developer role</li>
             <li>Hyderabad</li>

@@ -6,8 +6,11 @@
     box-shadow: 0 5px 15px 1px $theme-blue;
     padding: 2rem;
     background: $white;
+    width: 80%;
+    margin: 0 auto;
     &:hover {
-      transition: 0.5s;
+      transition: 0.8s;
+      transform: scale(1.1);
       box-shadow: 0 5px 15px 5px $theme-blue;
     }
     @media (min-width: 768px) {
@@ -66,12 +69,13 @@
   padding: 2rem;
   border-radius: 10px;
   color: $white;
-  width: 100%;
+  width: 90%;
   @media (min-width: 768px) {
     width: 50%;
   }
   &:hover {
-    transition: 1s;
+    transition: 0.8s;
+    transform: scale(1.1);
     background: $white;
     color: $theme-blue;
     border: 1px solid $theme-blue;
@@ -107,31 +111,60 @@
   }
 }
 
-//pattern
-// body {
-//   width: 100%;
-//   height: 100%;
-//   --s: 82px;
-//   --c1: #b2b2b2;
-//   --c2: #ffffff;
-//   --c3: #d9d9d9;
+//about
+.about-bio-container {
+  list-style: square;
+  li {
+    margin-bottom: 0.5rem;
+    @media (min-width: 768px) {
+      font-size: 1.2rem;
+    }
+  }
+}
 
-//   --_g: var(--c3) 0 120deg, #0000 0;
-//   background: conic-gradient(from -60deg at 50% calc(100% / 3), var(--_g)),
-//     conic-gradient(from 120deg at 50% calc(200% / 3), var(--_g)),
-//     conic-gradient(
-//       from 60deg at calc(200% / 3),
-//       var(--c3) 60deg,
-//       var(--c2) 0 120deg,
-//       #0000 0
-//     ),
-//     conic-gradient(from 180deg at calc(100% / 3), var(--c1) 60deg, var(--_g)),
-//     linear-gradient(
-//       90deg,
-//       var(--c1) calc(100% / 6),
-//       var(--c2) 0 50%,
-//       var(--c1) 0 calc(500% / 6),
-//       var(--c2) 0
-//     );
-//   background-size: calc(1.732 * var(--s)) var(--s);
-// }
+//work
+.work {
+  &-container {
+    display: flex;
+    flex-direction: column;
+    @media (min-width: 768px) {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+    &-item {
+      margin: 1rem auto;
+      display: flex;
+      align-items: center;
+      border-radius: 8px;
+      border: 1px solid $theme-blue;
+      width: 90%;
+      &:hover {
+        transition: 0.8s;
+        transform: scale(1.1);
+      }
+      padding: 1rem;
+      &:nth-child(2n) {
+        flex-direction: row-reverse;
+      }
+      &-image {
+        width: 100%;
+        margin: 1rem 0;
+        @media (min-width: 768px) {
+          width: 48%;
+        }
+        img {
+          width: 100%;
+        }
+      }
+      &-details {
+        text-align: center;
+        width: 100%;
+        font-size: 15px;
+        @media (min-width: 768px) {
+          width: 48%;
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}

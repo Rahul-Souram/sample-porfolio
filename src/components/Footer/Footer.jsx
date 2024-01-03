@@ -16,7 +16,7 @@ const Footer = () => {
     <div className="footer-container">
       <div className="footer-logo-container">
         <Link to="/" className="footer-logo">
-          Rahul Souram
+          My Portfolio
         </Link>
         <div className="footer-links-container">
           {footerLinks.map((item) => {
@@ -32,7 +32,7 @@ const Footer = () => {
           })}
         </div>
       </div>
-      <div className="footer-copy">Copyright &copy; Rahul Souram</div>
+      <div className="footer-copy">Copyright &copy; John Doe</div>
     </div>
   );
 };
