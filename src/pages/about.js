@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { SlideUpTitle } from "../animations/SlideUpTitle";
 import { SlideVertical } from "../animations/SlideVertical";
 import { scrollTop } from "../utils";
+import { ChartComponent } from "../components";
 
 const About = () => {
   return (
@@ -19,6 +20,7 @@ const About = () => {
             })}
           </SlideVertical>
         </ul>
+        <ChartComponent />
         <div className=" intro-card">
           <h2>My Works</h2>
           <div>
