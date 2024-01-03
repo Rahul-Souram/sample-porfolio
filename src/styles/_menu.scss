@@ -1,0 +1,107 @@
+.menu {
+  &-bar {
+    z-index: 999;
+    display: block;
+    @media (min-width: 992px) {
+      display: none;
+    }
+    button {
+      background-color: transparent;
+      border: none;
+      color: #fff;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      span {
+        border-radius: 10px;
+        height: 3px;
+        margin: 3px 0;
+        transition: 0.6s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+        background-color: $theme-blue;
+      }
+      span {
+        width: 30px;
+      }
+      &.active {
+        span {
+          background-color: $white;
+          margin: 0;
+        }
+        span:nth-of-type(1) {
+          width: 30px;
+          transform-origin: center;
+          transform: rotatez(-45deg);
+        }
+        span:nth-of-type(2) {
+          opacity: 0;
+        }
+        span:nth-of-type(3) {
+          width: 30px;
+          transform-origin: center;
+          transform: rotatez(45deg) translate(-4px, -5px);
+        }
+      }
+    }
+  }
+  &-list {
+    text-align: center;
+    position: relative;
+    z-index: 999;
+    padding: 0;
+    font-weight: 600;
+    &-item {
+      z-index: 999;
+      margin-bottom: 2rem;
+      font-size: 1.5rem;
+      list-style: none;
+      position: relative;
+      a {
+        color: #fff;
+        text-decoration: none;
+        &:hover {
+          font-weight: 600;
+        }
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: #fff;
+        transform-origin: bottom right;
+        transition: transform 0.25s ease-out;
+      }
+      &:hover::after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+      }
+    }
+    &-wrapper {
+      display: flex;
+      justify-content: center;
+      position: relative;
+    }
+  }
+  &-wrapper {
+    background: $theme-blue;
+    position: fixed;
+    transition: 1.2s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    z-index: 9;
+    &.inactive {
+      right: -110%;
+    }
+    &.active {
+      right: 0;
+    }
+  }
+}

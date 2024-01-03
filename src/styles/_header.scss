@@ -1,3 +1,67 @@
-.navbar {
-  background: $blue;
+.header {
+  &-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 0;
+    border-bottom: 1px solid gray;
+  }
+  &-logo {
+    img {
+      width: 4rem;
+      height: 4rem;
+    }
+  }
+  &-contact-container {
+    display: none;
+    @media (min-width: 992px) {
+      display: block;
+    }
+  }
+  &-menu-container {
+    display: none;
+    justify-content: space-between;
+    @media (min-width: 992px) {
+      display: flex;
+      font-size: 14px;
+    }
+    a {
+      margin: 0 2rem;
+      color: $black;
+      font-weight: 500;
+      position: relative;
+      font-size: 1rem;
+      &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: $theme-blue;
+        transform-origin: bottom right;
+        transition: transform 0.25s ease-out;
+      }
+      &:hover::after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+      }
+      &:hover {
+        color: $theme-blue;
+      }
+    }
+    @media (min-width: 992px) {
+      display: flex;
+      font-size: 18px;
+    }
+  }
+}
+
+header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background: $white;
+  z-index: 10;
 }
